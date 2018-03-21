@@ -5,6 +5,8 @@ A helper script for searching contact email addresses in an LDAP directory
 
 1. Have a look at the `config.example.ini`, copy it to `~/.config/mutt-ldap-query/config.ini` and adjust it to your environment.
 2. Run `./mutt-ldap-query.pl "a_search_string"` to verify it works.
+3. Edit your `muttrc` and add `set query_command = "~/bin/mutt-ldap-query.pl '%s'"` to use it for tab-complete from within mutt.
+
 
 For some verbose/debug output pass `-d` to the script or set the environment variable `MUTT_LDAP_QUERY_DEBUG` to 1.
 
